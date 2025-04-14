@@ -1,0 +1,24 @@
+After a lively night at sea, a sailor has awakened on his blanket in the middle of a raft and has decided to go for a short stroll. He is a bit disoriented at the moment, and will take steps completely randomly. Unfortunately, if he falls into the ocean in his current state then he will drown. But if he returns to his starting point before falling off the raft, then he will lie down and safely go back to sleep.
+
+What is the probability that the sailor will survive his walk? To find out, simulate this situation in Haskell.
+
+The center point where the sailor awakens is (0, 0). The four corners of the raft are at (N, N), (N, -N), (-N, N) and (-N, -N). The sailor can stand at any position (x, y), where -N <= x, y <= N. However if he walks to a point such as (N + 1, 0), he will fall off.
+
+The sailor always takes a step in one of 4 directions (up, down, left, right), completely at random.
+
+Standard input will contain two lines, each with a single integer:
+
+N = the size of the raft
+T = the number of random trials to perform
+In each trial, the sailor starts at the center, walks randomly, and either falls off the raft or reaches the starting position again and goes back to sleep.
+
+On standard output, write a single line showing the sailor's survival rate (a percentage rounded to 1 digit after the decimal point), as well as the number of successes (i.e. the number of times he survived) and the number of trials. For example, the output might look like this:
+survived 58.0% (58 / 100)
+
+
+Sample input:
+1
+3
+
+Output:
+survived 66.7% (2 / 3)
