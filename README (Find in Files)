@@ -1,0 +1,41 @@
+In this exercise you will write a Haskell program that can search for a string in all files in a given directory and its subdirectories (recursively).
+
+Your program should take two command-line arguments: the string to search for and the name of the directory to search in. It should search in the directory and its subdirectories for files with lines containing the string. Print out each matching line in the format
+
+<path-to-file>: <line>
+Write each file's output lines (if any) in the same order in which they appear in the input file.
+
+If your program is run with more or fewer than two command-line arguments, it should print exactly this usage message and exit:
+
+usage: find_in_files <string> <dir>
+Important: In the output, files must appear in in order sorted alphabetically by file path as in the example below.
+
+Important: Your program must contain a function
+
+run :: [String] -> IO ()
+that runs the program on the given list of command-line arguments. (This is how ReCodEx will invoke your program.) So your program's main entry point might look like this:
+
+main = do
+    args <- getArgs
+    run args
+Example
+
+Suppose that a directory "poems" has these files:
+
+poems/anais/risk
+poems/ezra/metro
+And suppose that the files have these contents:
+
+== poems/anais/risk ==
+And then the day came,
+when the risk
+to remain tight
+in a bud
+was more painful
+than the risk
+it took
+to blossom.
+
+== poems/ezra/metro ==
+The apparition of these faces in the crowd:
+Petals on a wet, black bough.
