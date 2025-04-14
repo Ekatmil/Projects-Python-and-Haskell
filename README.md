@@ -1,6 +1,6 @@
 Python and Haskell University Projects
 
-_**Python: **_
+_**Python:**_
 1) English or Czech -- define text language by letters' frequency (README provided)
 2) Beast in a Labyrinth -- (README provided)
 3) Connect Four -- game with pygame (README provided)
