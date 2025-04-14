@@ -1,0 +1,25 @@
+English or Czech?
+
+Write a program that reads one or more lines of text, and guesses whether the text is in English or Czech. In the input, Czech characters will be written without diacritical marks; for example, "pořád" will be written as "porad".
+
+To accomplish this task, compute the observed frequency of each letter in the input text, i.e. the number of occurrences of the letter divided by the total number of occurrences of all letters. Ignore case.
+
+The expected frequencies of letters in the English and Czech languages are as follows, as percentages. (You will need to divide the percentages by 100 to get frequencies in the range from 0 to 1.)
+
+Compare the observed  and expected frequencies by computing the chi-squared statistic for each language.
+
+Write three lines to standard output:
+
+'Match with English:', followed by the computed statistic for English
+'Match with Czech:', followed by the computed statistic for English
+'Text is in English' or 'Text is in Czech'
+Write output numbers with a precision of two digits after the decimal point.
+
+Sample input:
+how now,
+brown cow
+
+Output:
+Match with English: 4.54
+Match with Czech: 512.33
+Text is in English
