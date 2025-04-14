@@ -1,0 +1,9 @@
+Implement the game of Connect Four, with a graphical interface in pygame. In this game, 2 players take turns dropping discs into a 7 x 6 board until one of them makes 4 in a row horizontally, vertically, or diagonally. The Wikipedia page includes an animation that illustrates how the game works.
+
+To help you get started, I have provided a complete implementation of Tic Tac Toe. You can find a link to it at the end of the last week's lecture notes. Run this program and study it to see how it works. I recommend that you create your Connect Four game by modifying this Tic Tac Toe program.
+
+Your program's graphics should look something like this.
+
+On each player's turn, let them click anywhere in a column to play in the lowest free space in that column. In other words, they should not need to click on the free space itself.
+
+Just like in the Tic Tac Toe program, if a player wins, highlight the winning position like this. On the next click (anywhere), the game should begin again.
